@@ -28,7 +28,3 @@ document.addEventListener("wheel", event => {
   const container = document.querySelector(".main");
   container.scrollLeft += event.deltaY;
 });
-
-// document.addEventListener("scroll", evt => {
-//   console.log(evt);
-// });

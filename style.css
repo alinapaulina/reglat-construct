@@ -2,12 +2,14 @@
 
 .card-block {
     min-height: 100%;
-    width: 500px;
+    width: 100%;
     border-radius: 0 !important;
-    margin: -40px !important;
+    /* margin: -40px !important; */
 }
-.div.col-4{
-width: 100vh !important; 
+div.category.col-sm-4{
+/* width: 90% !important;  */
+padding-right: 0;
+padding-left: 0;
 }
 .card-img-top {
     width: 100% !important;
@@ -15,11 +17,15 @@ width: 100vh !important;
     object-fit: cover;
     border-radius: 0 !important;
     /* margin-bottom: 8vh; */
+    max-width: 100%;
 }
 .div.card-block {
   margin: 0;
   padding: 0;
   
+}
+div.card.card-block.card-text {
+    border: 0px !important;
 }
 * {
   box-sizing: border-box;
@@ -78,13 +84,28 @@ body {
     width: 2rem;
     border-radius: 50%;
     /* background: #4A676A; */
-    background: #3f3f3f;
+    background: #000000a1;
     background-size: cover;
     background-position: center;
     z-index: 100;
     transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
 }
-
+.bg1 {
+    background-color: #222224;
+}
+.bg2 {
+    background-color: #171719;
+}
+.bg3 {
+    background-color: #000000;
+}
+.navb {
+    height: 1000rem;
+}
+.navcard {
+    background-color: rgba(0, 0, 0, 0) !important;
+    width: 90rem !important;
+}
 @media screen and (min-width: 768px) {
     .navigation__background {
         top: 4rem;
@@ -107,7 +128,6 @@ body {
 }
 
 .navigation__list {
-    /* @include center; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -118,34 +138,32 @@ body {
 }
 
 .navigation__item {
-    margin: 1rem;
+    margin: 0;
 }
 
 .navigation__link:link,
 .navigation__link:visited {
-    display: inline-block;
-    padding: 1rem 2rem;
-    text-transform: uppercase;
+    /* height: 100%; */
     color: #f4f4f4;
     font-size: 2.4rem;
     text-decoration: none;
     transition: all .2s;
+    width: 27%;
+    padding-left: 70px;
+    padding-top: 28%;
+    font-family: 'Outfit', sans-serif;
 }
 
 @media(min-width: 768px) {
     .navigation__link:link,
     .navigation__link:visited {
         font-size: 3.8rem;
+
     }
 }
 
-.navigation__link span {
-    margin-right: 1.5rem;
-    display: inline-block;
-}
-
 .navigation__link:hover {
-    color: #C1D0D0;
+    color: #acacac;
     transform: scale(1.1);
 }
 
@@ -229,6 +247,7 @@ body {
 .card-text {
   position: relative;
   /* width: 50%; */
+  margin: 0px;
 }
 
 .text {
@@ -263,3 +282,93 @@ body {
 .main {
    overflow: hidden;
 }
+@media (max-width:575px) {
+    .category {
+        width: 50% !important;
+        height: 110vh;
+        object-fit: cover;
+        border-radius: 0 !important;
+        /* margin-bottom: 8vh; */
+        max-width: 100%;
+    }
+}
+@media (max-width:560px) {
+    div.row.flex-nowrap {
+        display: flex;
+        flex-direction: column !important;
+        height: auto;
+        width: auto;
+        overflow: scroll !important;
+    }
+    .category {
+        position: fixed;
+        flex-direction: column;
+    }
+    .card-img-top {
+        width: 100%;
+        height: 100%;
+    }
+    .navigation__link:link,
+    .navigation__link:visited {
+        color: #f4f4f4;
+        font-size: 2.4rem;
+        text-decoration: none;
+        transition: all .2s;
+        width: auto;
+        padding-left: 70px;
+        padding-top: 28%;
+        font-family: 'Outfit', sans-serif;
+        flex-direction: column !important;
+}
+    
+    /* .navcard {
+        width: 100rem !important;
+    } */
+    .navigation__item {
+        height: 100rem;
+        width: 1000rem;
+    }
+    /* .navb {
+        display: flex;
+        flex-direction: column !important;
+        height: auto;
+        width: auto;
+        overflow: scroll !important;
+    } */
+    .bg1.bg2.bg3 {
+        width: 100rem;
+        height: 20% !important;
+    }
+    div.navigation__background {
+        width: 5%;
+    }
+}
+/* @media (max-width:500) {
+    div.row.flex-nowrap {
+        display: flex;
+        flex-direction: column !important;
+        height: auto;
+        width: auto;
+        overflow: scroll !important;
+    }
+    .category {
+        position: fixed;
+        flex-direction: column;
+    }
+    .card-img-top {
+        width: 100%;
+        height: 100%;
+    }
+    .navigation__link:link,
+    .navigation__link:visited {
+        color: #f4f4f4;
+        font-size: 2.4rem;
+        text-decoration: none;
+        transition: all .2s;
+        width: 100%;
+        padding-left: 70px;
+        padding-top: 28%;
+        font-family: 'Outfit', sans-serif;
+}
+    
+} */
