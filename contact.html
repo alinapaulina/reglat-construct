@@ -5,40 +5,42 @@
 		<meta name="viewport"content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Contact Reglat Construct</title>
 		<link href="contact.css"rel="stylesheet"type="text/css"/>
+    <link rel="stylesheet" href="navigation.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
 	</head>
 	<body>
-        <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-            <label for="nav-toggle" class="navigation__button">
-              <span class="navigation__icon" aria-label="toggle navigation menu"></span>
-            </label>
-            <div class="navigation__background"></div>
-      
-            <nav class="navigation__nav" role="navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item">
-                  <a href="about.html" class="navigation__link"><span>01</span>About</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="contact.html" class="navigation__link"><span>02</span>Contact</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="categories.html" class="navigation__link"><span>03</span>Categories</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="history.html" class="navigation__link"><span>04</span>History</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="home.html" class="navigation__link"><span>05</span>Back home</a>
-                </li>
-          </ul>
-        </nav>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="navigation__button">
+          <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+      </label>
+      <div class="navigation__background"></div>
 
+      <nav class="navigation__nav" role="navigation">
+          <div class="container-fluid">
+              <div class="row flex-nowrap navb">
+                  <div class="navigation__item  col-sm-4 bg1">
+                      <div class="card card-block card-text navcard">
+                          <a href="produse.html" class="navigation__link">Produse</a>
+                      </div>
+                  </div>
+                  <div class="navigation__item  col-sm-4 bg2">
+                      <div class="card card-block card-text navcard">
+                          <a href="about.html" class="navigation__link">Despre</a>
+                      </div>
+                  </div>
+                  <div class="navigation__item  col-sm-4 bg3">
+                      <div class="card card-block card-text navcard">
+                          <a href="contact.html" class="navigation__link">Contact</a>
+                      </div>
+                  </div>
+              </div>
+      </nav>
 		<div class="contact-wrap">
 			<div class="contact-in">
 				<h1>Contact Info</h1>

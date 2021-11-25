@@ -11,11 +11,11 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $(".category").hover(function(){
-    var desc = $(this).find(".subtext")
+    var desc = $(this).find(".title")
     desc.fadeIn();
     desc.animate({top: '550px'});
   }, function() {
-    var desc = $(this).find(".subtext")
+    var desc = $(this).find(".title")
     desc.animate({top: '700px'});
   });
 });
